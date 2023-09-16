@@ -26,7 +26,7 @@ namespace TemperatureConverter.App.Entities
             }
             catch (Exception exception)
             {
-                throw new Exception($"Error Convert Celsius To Fahrenheit: {exception.Message}" );
+                throw new Exception($"Error convert Celsius to Fahrenheit: {exception.Message}" );
             }
         }
 
@@ -39,7 +39,7 @@ namespace TemperatureConverter.App.Entities
             }
             catch (Exception exception)
             {
-                throw new Exception($"Error Convert Celsius To Kelvin: {exception.Message}" );
+                throw new Exception($"Error convert Celsius to Kelvin: {exception.Message}" );
             }
         }
     }
