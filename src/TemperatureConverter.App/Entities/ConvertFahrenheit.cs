@@ -22,7 +22,7 @@ namespace TemperatureConverter.App.Entities
         public double ConvertFahrenheitToKelvin()
         {
             var kelvin = (Fahrenheit - 32) * 5 / 9 + 273.15;
-            return Math.Round(kelvin, 2);
+            return kelvin;
         }
     }
 }
