@@ -23,4 +23,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TemperatureConverter.App\TemperatureConverter.App.csproj" />
+  </ItemGroup>
+
 </Project>
