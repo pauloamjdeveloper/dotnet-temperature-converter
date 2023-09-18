@@ -45,15 +45,15 @@ internal class Program
                     var convertFahrenheit = new ConvertFahrenheit(inputValue);
                     var fahrenheitToCelsiusResult = convertFahrenheit.ConvertFahrenheitToCelsius();
                     var fahrenheitToKelvinResult = convertFahrenheit.ConvertFahrenheitToKelvin();
-                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Celsius equals to {fahrenheitToCelsiusResult.ToString("F2", culture)}° Celsius.");
-                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Celsius equals to {fahrenheitToKelvinResult.ToString("F2", culture)}° Kelvin.");
+                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Fahrenheit equals to {fahrenheitToCelsiusResult.ToString("F2", culture)}° Celsius.");
+                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Fahrenheit equals to {fahrenheitToKelvinResult.ToString("F2", culture)}° Kelvin.");
                     break;
                 case 3:
                     var convertKelvin = new ConvertKelvin(inputValue);
                     var kelvinToCelsiusResult = convertKelvin.ConvertKelvinToCelsius();
                     var kelvinToFahrenheitResult = convertKelvin.ConvertKelvinToFahrenheit();
-                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Celsius equals to {kelvinToCelsiusResult.ToString("F2", culture)}° Celsius.");
-                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Celsius equals to {kelvinToFahrenheitResult.ToString("F2", culture)}° Fahrenheit.");
+                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Kelvin equals to {kelvinToCelsiusResult.ToString("F2", culture)}° Celsius.");
+                    Console.WriteLine($"{inputValue.ToString("F2", culture)}° Kelvin equals to {kelvinToFahrenheitResult.ToString("F2", culture)}° Fahrenheit.");
                     break;
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");

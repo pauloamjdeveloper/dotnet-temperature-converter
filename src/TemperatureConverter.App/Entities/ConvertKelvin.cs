@@ -1,46 +1,29 @@
 using TemperatureConverter.App.Interfaces;
+using TemperatureConverter.App.Utilities;
 
 namespace TemperatureConverter.App.Entities
 {
     public class ConvertKelvin : IConvertKelvin
     {
-        private double _kelvin;
-
-        public double Kelvin
-        {
-            get { return _kelvin; }
-            private set { _kelvin = value; }
-        }
+        public double Kelvin { get; }
 
         public ConvertKelvin(double kelvin)
         {
+            Validate.ValidateKelvinTemperature(kelvin);
+            Validate.ValidateNullTemperature(kelvin);
             Kelvin = kelvin;
         }
         
         public double ConvertKelvinToCelsius()
         {
-            try
-            {
-                var celsius = _kelvin - 273.15;
-                return Math.Round(celsius, 2);
-            }
-            catch (Exception exception)
-            {
-                throw new Exception($"Error convert Kelvin to Celsius: {exception.Message}" );
-            }
+            var celsius = Kelvin - 273.15;
+            return Math.Round(celsius, 2);
         }
 
         public double ConvertKelvinToFahrenheit()
         {
-            try
-            {
-                var fahrenheit = _kelvin - 273.75;
-                return Math.Round(fahrenheit, 2);
-            }
-            catch (Exception exception)
-            {
-                throw new Exception($"Error convert Kelvin to Fahrenheit: {exception.Message}" );
-            }
+            var fahrenheit = (Kelvin - 273.15) * 9/5 + 32;
+            return Math.Round(fahrenheit, 2);
         }
     }
 }
