@@ -7,7 +7,7 @@
 
 ## :computer: Projeto
 
-Repositório com aplicação `Console.application` criada para fins acadêmicos simulando um conversor de temperaturas, onde usuário terá acesso a um menu para selecionar as conversões `Celsius`, `Fahrenheit` e `Kelvin`.
+Repositório com aplicação criada para fins acadêmicos com o objetivo de simular um conversor de temperaturas, onde usuário terá acesso a um menu para selecionar as conversões `Celsius`, `Fahrenheit` e `Kelvin`.
 
 ## :white_check_mark: Decisões Técnicas
 
@@ -22,7 +22,7 @@ Este projeto está sujeito a futuras alterações e tem como objetivo aplicar al
 ## :heavy_check_mark: Recursos Utilizados
 
 - ``.NET 6``
-- ``ASP.NET``
+- ``Console Application``
 - ``C#``
 - ``XUnit``
 - ``Moq``
@@ -31,7 +31,7 @@ Este projeto está sujeito a futuras alterações e tem como objetivo aplicar al
 ## :floppy_disk: Clonar Repositório
 
 ```bash
-git clone  https://github.com/pauloamjdeveloper/dotnet-temperature-converter.git
+git clone https://github.com/pauloamjdeveloper/dotnet-temperature-converter.git
 ```
 
 ## :boy: Author
